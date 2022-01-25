@@ -65,8 +65,22 @@ $superheroes = [
 
 ?>
 
+<!-- This is a for loop that produces the superheros as an unordered list -->
 <ul>
 <?php foreach ($superheroes as $superhero): ?>
   <li><?= $superhero['alias']; ?></li>
 <?php endforeach; ?>
 </ul>
+
+<!-- Creating a form for the list of superheroes -->
+<form action="" method=GET>
+    <input type="textarea" name="tsearch">
+    <input type="submit" name="submit">
+
+    
+</form>
+
+<?php 
+if(isset($_GET[]))
+
+?>
